@@ -1,16 +1,12 @@
 {
-    "java.project.referencedLibraries": {
-        "include": [
-            "lib/**/*.jar",
-            // 用于链接数据库
-            "/usr/share/java/mysql-connector-java.jar",
-            // 用于单元测试
-            "/usr/share/java/junit.jar",
-            "/usr/share/java/hamcrest-core.jar"
-        ],
-        "exclude": [
-            //
-        ]
-    },
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "/usr/share/java/mysql-connector-java.jar",
+        "/usr/share/java/junit.jar",
+        "/usr/share/java/hamcrest-core.jar",
+        "/home/yusoli/.local/share/apache-tomcat-8.5.63/lib/jsp-api.jar",
+        "/home/yusoli/.local/share/apache-tomcat-8.5.63/lib/servlet-api.jar",
+        "/home/yusoli/.local/share/apache-tomcat-8.5.63/lib/tomcat-api.jar"
+    ],
     // "tomcat.workspace": "."
 }
