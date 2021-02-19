@@ -1,0 +1,65 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background: url(../../../assets/images/register_bg.png) no-repeat center;
+}
+
+.rg_layout {
+  width: 900px;
+  height: 500px;
+  border: 8px solid #eeeeee;
+  background-color: #555555;
+  margin: auto;
+  margin-top: 15px;
+}
+
+.rg_left {
+  /* border: 1px solid red; */
+  float: left;
+  margin: 15px;
+}
+
+.rg_left > p:first-child {
+  color: #ffd026;
+  font-size: 20px;
+}
+
+.rg_left > p:last-child {
+  color: #a6a6a6;
+  font-size: 20px;
+}
+
+.rg_center {
+  /* border: 1px solid red; */
+  float: left;
+  width: 450px;
+  /* height: 450px; */
+}
+
+.td_left {
+    width: 100px;
+    text-align: left;
+    height: 45px;
+}
+
+.td_right {
+  margin-right: 50px;
+}
+
+.rg_right {
+  /* border: 1px solid red; */
+  float: right;
+}
+
+.rg_right > p:first-child {
+  font-size: 10px;
+  margin: 15px;
+}
+
+.rg_right p a {
+  color: pink;
+}

@@ -1,0 +1,16 @@
+{
+    "java.project.referencedLibraries": {
+        "include": [
+            "lib/**/*.jar",
+            // 用于链接数据库
+            "/usr/share/java/mysql-connector-java.jar",
+            // 用于单元测试
+            "/usr/share/java/junit.jar",
+            "/usr/share/java/hamcrest-core.jar"
+        ],
+        "exclude": [
+            //
+        ]
+    },
+    // "tomcat.workspace": "."
+}
