@@ -2,9 +2,7 @@
 <!-- =========================================================== -->
 <!-- WebApp for Servlet 3.1                                      -->
 <!-- =========================================================== -->
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>yusoli</groupId>
   <artifactId>servletself</artifactId>
@@ -35,17 +33,17 @@
       <version>1.2.4</version>
       <exclusions>
         <exclusion>
-            <groupId>javax.servlet</groupId>
-            <artifactId>servlet-api</artifactId>
+          <groupId>javax.servlet</groupId>
+          <artifactId>servlet-api</artifactId>
         </exclusion>
         <exclusion>
-            <groupId>javax.servlet.jsp</groupId>
-            <artifactId>jsp-api</artifactId>
+          <groupId>javax.servlet.jsp</groupId>
+          <artifactId>jsp-api</artifactId>
         </exclusion>
       </exclusions>
     </dependency>
   </dependencies>
-  
+
   <build>
     <finalName>servletself</finalName>
     <plugins>
@@ -58,7 +56,20 @@
           <target>1.7</target>
         </configuration>
       </plugin>
+      <plugin>
+        <groupId>org.apache.tomcat.maven</groupId>
+        <artifactId>tomcat7-maven-plugin</artifactId>
+        <version>2.2</version>
+        <configuration>
+          <server>tomcat8</server>
+          <url>http://localhost:8080/manager/text</url>
+          <username>yusoli</username>
+          <password>123456</password>
+          <path>/${project.artifactId}</path>
+          <port>8080</port>
+        </configuration>
+      </plugin>
     </plugins>
   </build>
-  
+
 </project>
