@@ -65,7 +65,9 @@
           <url>http://localhost:8080/manager/text</url>
           <username>yusoli</username>
           <password>123456</password>
-          <path>/${project.artifactId}</path>
+          <!-- 选择项目发布的地址目录 -->
+          <!-- <path>/${project.artifactId}</path> -->
+          <path>/</path>
           <port>8080</port>
         </configuration>
       </plugin>
