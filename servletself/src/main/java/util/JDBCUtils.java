@@ -17,7 +17,7 @@ public class JDBCUtils {
     static {
         try {
             Properties properties = new Properties();
-            // 注意`druid.properties`文件的存放位置：`src/main/java/druid.properties`
+            // 注意`druid.properties`文件的存放位置：`src/main/resources/druid.properties`
             properties.load(JDBCUtils.class.getClassLoader().getResourceAsStream("druid.properties"));
             ds = DruidDataSourceFactory.createDataSource(properties);
         } catch (Exception e) {
