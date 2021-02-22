@@ -117,6 +117,7 @@
         <configuration>
           <server>tomcat8</server>
           <url>http://192.168.3.85:8080/manager/text</url>
+          <!-- <url>http://localhost:8080/manager/text</url> -->
           <path>/${project.artifactId}</path>
           <charset>UTF-8</charset>
           <update>true</update>
